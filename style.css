@@ -8,11 +8,13 @@ body {
   color: #1a1a1a;
   font-family: "Open Sans", sans-serif;
   text-transform: uppercase;
+  background-color: #b3ccff;
 }
 
-img {
+.logo {
   max-width: 150px;
   height: auto;
+  opacity: 0.2;
 }
 
 .header-container {
@@ -37,12 +39,12 @@ img {
 .nav-link {
   text-decoration: none;
   padding: 2px 4px;
-  color: #6699ff;
+  color: #262626;
 }
 
 .nav-link:hover {
-  background-color: #b3ccff;
-  color: #262626;
+  color: #ff9999;
+  background-color: #f2f2f2;
 }
 
 .dropdown {
@@ -79,14 +81,15 @@ img {
 
 .hero {
   display: flex;
-  background-color: #b3ccff;
+  background-color: #fff;
   padding: 50px;
   align-items: center;
+  height: 90vh;
 }
 
 .hero-img {
   max-width: 450px;
-  height: 450px;
+  height: auto;
   padding: 50px;
 }
 
@@ -107,4 +110,53 @@ img {
   background-color: #ff9999;
   border: 2px solid #fff;
   color: #262626;
+}
+
+/* Cross Nav */
+.cross-nav {
+  display: flex;
+}
+
+.cross-nav-link {
+  display: block;
+  text-align: center;
+  padding: 200px 0;
+  font-size: 21px;
+  font-weight: 600;
+  text-decoration: none;
+  color: #262626;
+}
+
+.cross-nav-img {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.75;
+}
+
+.cross-nav-img:hover {
+  opacity: 1;
+}
+
+.box-left {
+  background-image: url("img/storefront.png");
+  width: 100%;
+  height: 400px;
+}
+
+.box-right {
+  background-image: url("img/bowls.png");
+  width: 100%;
+  height: 400px;
+}
+
+/* Footer */
+.footer-container {
+  display: flex;
+  padding: 50px;
+  justify-content: space-evenly;
+}
+
+.footer-col ul {
+  list-style-type: none;
 }
